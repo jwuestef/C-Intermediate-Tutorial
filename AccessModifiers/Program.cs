@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fields
+namespace AccessModifiers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var customer = new Customer(1);
-            customer.Orders.Add(new Order());
+            var person = new Person();
+            person.SetBirthdate(new DateTime(1982, 1, 1));
+            Console.WriteLine(person.GetBirthdate());
         }
     }
 }

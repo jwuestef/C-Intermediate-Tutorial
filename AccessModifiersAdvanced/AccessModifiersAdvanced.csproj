@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C2B2F42-3A17-45F5-B73B-DD00B5D012B5}</ProjectGuid>
+    <ProjectGuid>{E2EDAC8D-8A48-4AAE-AC79-6B8C8DB50CAB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Fields</RootNamespace>
-    <AssemblyName>Fields</AssemblyName>
+    <RootNamespace>AccessModifiersAdvanced</RootNamespace>
+    <AssemblyName>AccessModifiersAdvanced</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessModifiersAdvancedClassLibrary\AccessModifiersAdvancedClassLibrary.csproj">
+      <Project>{0da720a2-7a38-4e0f-bcd1-b68413e9f79c}</Project>
+      <Name>AccessModifiersAdvancedClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
